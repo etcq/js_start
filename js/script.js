@@ -90,16 +90,16 @@
 
 
 // ФУНКЦИИ
-let num = 20;
+// let num = 20;
 
-function showFirstMessage(text) {
-    console.log(text);
-    let num = 10;
-    console.log(num);
-}
+// function showFirstMessage(text) {
+//     console.log(text);
+//     let num = 10;
+//     console.log(num);
+// }
 
-showFirstMessage("Hello world");
-console.log(num);
+// showFirstMessage("Hello world");
+// console.log(num);
 
 // console.log(calc(4, 3));
 // console.log(calc(5, 6));
@@ -129,3 +129,29 @@ console.log(num);
 //     console.log('1');
 //     return a + b;
 // };
+
+// L17 Методы и свойства строк и чисел //
+
+// const str = "test";
+
+// console.log(str.toUpperCase());
+// console.log(str);
+
+// const fruit = 'Some fruit';
+
+// console.log(fruit.indexOf("fruit"));
+
+// const logg = "Hello world";
+
+// // console.log(logg.slice(6));
+
+// // console.log(logg.substring(6, 11));
+
+// console.log(logg.substr(6, 5));
+
+// const num = 12.2;
+// console.log(Math.round(num));
+
+// const test = "12.2px";
+// // console.log(parseInt(test));
+// console.log(parseFloat(test));

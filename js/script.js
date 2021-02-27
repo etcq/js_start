@@ -143,7 +143,7 @@
 
 // const logg = "Hello world";
 
-// // console.log(logg.slice(6));
+// // console.log(logg.sice(6));
 
 // // console.log(logg.substring(6, 11));
 
@@ -490,3 +490,75 @@
 //console.log("Eжик" > "яблоко");
 
 //console.log(0 || "" || 2 || undefined || true || falsе );
+
+
+//                          LESSON 32 Навигация по DOM              //
+
+// console.log(document.body);
+// console.log(document.documentElement);
+// console.log(document.body.childNodes);
+// console.log(document.body.firstChild);
+// console.log(document.body.lastChild);
+
+// console.log(document.querySelector('#current').parentNode);
+// console.log(document.querySelector('#current').parentElement);
+
+// console.log(document.querySelector('[data-current="3"]').nextElementSibling);
+
+// for (let node of document.body.childNodes) {
+//     if (node.nodeName == '#text') {
+//         continue;
+//     } 
+//     console.log(node);
+// }
+
+//                          LESSON 34 События мобильных устройств           //
+
+// touchstart
+// touchmove
+// touchend
+// touchenter
+// touchleave
+// touchcancel
+
+// window.addEventListener('DOMContentLoaded', () => {
+//     const box = document.querySelector('.box');
+
+//     box.addEventListener('touchstart', (e) => {
+//         e.preventDefault();
+//         console.log('Start');
+//         console.log(e.targetTouches);
+//     });
+
+//     box.addEventListener('touchmove', (e) => {
+//         e.preventDefault();
+//         console.log(e.targetTouches[0].pageX);
+//     });
+
+
+    // box.addEventListener('touchend', (e) => {
+    // e.preventDefault();
+    // console.log('End');
+// });
+// });
+
+// touches
+// targetTouches
+// changedTouches
+
+//              Lesson 35 async defer           //
+
+const p = document.querySelectorAll('p');
+console.log(p);
+
+
+
+function loadScript(src) {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = false;
+    document.body.append(script);
+}
+
+loadScript('js/test.js');
+loadScript('js/some.js');
